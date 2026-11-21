@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Vishnupriya ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #240b36, #70245d, #160d2b);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px 18px;
+}
+
+h1 {
+    color: #ff9acb;
+    font-size: clamp(38px, 8vw, 65px);
+    text-shadow: 0 0 20px #ff1493;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff1493; }
+    to { text-shadow: 0 0 30px #ff69b4; }
+}
+
+.subtitle {
+    color: #ffe18a;
+    font-size: 27px;
+    margin: 15px;
+}
+
+.cake {
+    font-size: 100px;
+    margin: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-15px); }
+}
+
+.photo-frame {
+    display: inline-block;
+    padding: 9px;
+    margin: 25px auto;
+    border-radius: 25px;
+    border: 3px solid #ff8fc8;
+    box-shadow: 0 0 30px #ff1493;
+    animation: glow 2s infinite alternate;
+}
+
+.photo-frame img {
+    display: block;
+    width: min(280px, 75vw);
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.message {
+    font-size: 19px;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 650px;
+}
+
+.highlight {
+    color: #ffacd3;
+    font-size: 26px;
+    font-style: italic;
+    margin: 25px;
+}
+
+button {
+    padding: 16px 28px;
+    background: linear-gradient(90deg, #ff1685, #ff69b4);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px;
+    box-shadow: 0 0 20px #ff1493;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+#surprise {
+    display: none;
+    background: #ffffff15;
+    border: 1px solid pink;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px auto;
+    max-width: 650px;
+    animation: glow 2s infinite alternate;
+}
+
+.song {
+    margin: 35px auto;
+    max-width: 560px;
+}
+
+.song iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 15px;
+}
+
+footer {
+    padding: 30px 10px;
+    color: #ffacd3;
+}
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    animation: float 8s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .container { padding: 25px 14px; }
+    .photo-frame img {
+        height: 300px;
+    }
+    .message { font-size: 17px; }
+    .subtitle { font-size: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="cake">🎂</div>
+
+    <h1>Happy Birthday!</h1>
+
+    <div class="subtitle">
+        Dear Vishnupriya ❤️
+    </div>
+
+    <h2>23rd Birthday Celebration 🎉</h2>
+
+    <div class="photo-frame">
+        <img src="Photo.jpg"
+             alt="Birthday memories">
+    </div>
+
+    <h2>My Favourite Person ❤️</h2>
+
+    <p class="message">
+        May your life be filled with happiness,
+        your heart with love, and your days
+        with endless beautiful memories.
+        Keep smiling and stay blessed always.
+    </p>
+
+    <div class="highlight">
+        You are my happiness! ❤️
+    </div>
+
+    <button onclick="openSurprise()">
+        🎁 Open Your Special Surprise
+    </button>
+
+    <div id="surprise">
+        <h2>Something Special For You 💖</h2>
+
+        <p class="message">
+            Vishnupriya, you are my mind-reliever
+            and the person who makes me happy.
+            Your smile makes my day brighter.
+
+            Thank you for being such a special
+            person in my life.
+
+            Never stop smiling.
+            You deserve all the happiness
+            in this world! ❤️
+        </p>
+
+        <h1>Love You ❤️</h1>
+        <div style="font-size:55px">🌹💝🎂</div>
+    </div>
+
+    <div class="song">
+        <h2>🎵 A Special Song For You</h2>
+        <p style="margin:12px">
+            Munbe Vaa ❤️ | Tamil Love Song
+        </p>
+
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/UPQZ4vuvW2s"
+          title="Munbe Vaa Tamil love song"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<footer>
+    Made with lots of love ❤️<br>
+    Happy 23rd Birthday, Vishnupriya! 🎂
+</footer>
+
+<script>
+// Surprise message
+function openSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    confetti();
+}
+
+// Confetti animation
+function confetti() {
+    const colors = [
+        "#ff1493", "#ffd700",
+        "#ffffff", "#ff69b4", "#00ffff"
+    ];
+
+    for (let i = 0; i < 120; i++) {
+        let piece = document.createElement("div");
+
+        piece.style.position = "fixed";
+        piece.style.width = "8px";
+        piece.style.height = "8px";
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.top = "-15px";
+        piece.style.background =
+            colors[Math.floor(Math.random() * colors.length)];
+        piece.style.zIndex = "9999";
+        piece.style.pointerEvents = "none";
+
+        document.body.appendChild(piece);
+
+        let duration = 2000 + Math.random() * 2500;
+
+        piece.animate([
+            { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+            {
+                transform: `translateY(110vh) rotate(${Math.random()*720}deg)`,
+                opacity: 0
+            }
+        ], {
+            duration: duration,
+            easing: "linear"
+        });
+
+        setTimeout(() => piece.remove(), duration);
+    }
+}
+
+// Floating hearts
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 500);
+
+// Welcome confetti
+window.addEventListener("load", confetti);
+</script>
+
+</body>
+</html>
+
